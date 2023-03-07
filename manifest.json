@@ -1,0 +1,16 @@
+{
+	"name": "Out-ChatGPT",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"description": "Export chat text from ChatGPT",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Save Web Page",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": ["activeTab", "downloads", "scripting"],
+	"web_accessible_resources": ["lib/docx.min.js", "lib/jspdf.min.js"]
+}

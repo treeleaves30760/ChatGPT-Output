@@ -34,7 +34,6 @@ function saveItemsOnPage() {
 		textContent += textArray[i];
 		textContent += "\n";
 	}
-	console.log(textContent);
 	const filename = `items-${Date.now()}.txt`;
 	const blob = new Blob([textContent], { type: "text/plain" });
 	const url = URL.createObjectURL(blob);
@@ -45,5 +44,5 @@ function saveItemsOnPage() {
 	link.click();
 }
 document.addEventListener("DOMContentLoaded", function () {
-	document.getElementById("save-btn").addEventListener("click", saveItems);
+	document.getElementById("saveTXT").addEventListener("click", saveItems);
 });

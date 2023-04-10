@@ -12,10 +12,10 @@ function saveItemsOnPage() {
 	var textArray = Array.prototype.map.call(Elements, function (element) {
 		return element.textContent;
 	});
-	textArray.pop();
+	// textArray.pop();
 	var textContent = "";
-	for (var i = 0; i < textArray.length; i++) {
-		if (i % 2 == 0) {
+	for (var i = 1; i < textArray.length; i++) {
+		if (i % 2 == 1) {
 			textContent += "User: \n";
 		} else {
 			textContent += "Chat: \n";
